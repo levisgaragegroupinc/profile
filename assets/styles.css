@@ -1,0 +1,145 @@
+/*Universal Selector*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Individual style selectors*/
+
+/*removes default styling from children li elemnts of the nav, unorderd list*/
+nav > ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    padding: 9px 18px;
+    margin: 3px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+/*nav button styling on hover*/
+li:hover {
+    background-color: #eef5d0;
+    box-shadow: 1px 3px hsla(49, 81%, 54%, 0.699);
+}
+
+/*removes default styling from all <a> links*/
+li > a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+
+}
+
+/*navigation position*/
+nav > ul {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 0;
+    z-index: 9999;
+}
+
+@media only screen and (max-width: 760px) {
+    nav > ul {
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        width: 100%;
+    }    
+}
+
+main {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+/*my profile image styling*/
+.profile-image {
+    border-radius: 12px;
+    width: 200px;
+    height: 150.250px;
+    margin: 3px 3px 6px 3px;
+}
+
+.about {
+    display: block;
+    margin-top: 32px;
+}
+
+/*corrects position of content below the nav*/
+.work {
+    margin-top: 32px;
+}
+
+/*sets the child contents inside the div to flex*/
+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.projects {
+    margin-right: 20px;
+}
+
+.project0 {
+    margin-right: 20px;
+}
+
+/*primary project folder animation styling*/
+.project0:hover {
+    transform: rotate(1.5deg);
+    background-color: hsla(49, 81%, 54%, 0.699);
+    width: 200px;
+    height: 421px;
+    padding-left: 3px;
+    margin-right: 517px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+
+/*all other secondary project folder animation styling*/
+.projects:hover {
+    transform: rotate(1.5deg);
+    background-color: hsla(49, 81%, 54%, 0.699);
+    width: 200px;
+    height: 421px;
+    padding-left: 3px;
+    margin-right: 167px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-start;
+}
+
+/*sets the case for phone and email labels in the footer*/
+address > p > span {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*removes text decoration on the links in the footer*/
+address > p > a {
+    text-decoration: none;
+    color: #333;
+}
