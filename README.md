@@ -23,12 +23,13 @@ This website uses a simple section container with flex applied, allowing for mul
 
 The layout of the page is designed to work on both desktop and mobile screens. When the screen resolution is smaller than 768px the navigation menu becomes a column and is no longer docked to the top of the page to allow for more vertical scrolling room.
 
-## Mock Up
-Desktop
+### Desktop Mock Up
+
 ![Desktop screenshot](./assets/images/profile_web_screenshot_full.png)
 
-Mobile
-![Mobile screenshot](./assets/images/profile_web_screenshot_mobile.png)
+### Mobile Mock Up
+
+<img src="./assets/images/profile_web_screenshot_mobile.png" width="250">
 
 ## View the Project
 Navigate to [profile](https://levisgaragegroupinc.github.io/profile/) to view the live page.
