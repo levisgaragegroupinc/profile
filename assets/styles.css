@@ -98,6 +98,8 @@ h4 {
 /*sets the padding around the profile content group(image/credits)*/
 .profile-group {
     padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 /*defines the profile image border*/
@@ -237,6 +239,7 @@ div > ul > li > a {
 
     .profile-group {
         padding-bottom: 10px;
+        padding-left: 0px;
     }
 
     nav > ul {
