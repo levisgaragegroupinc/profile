@@ -1,145 +1,255 @@
 /*Universal Selector*/
-*{
+* {
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 600;
+    list-style-type: none;
 }
 
 /*Individual style selectors*/
 
-/*removes default styling from children li elemnts of the nav, unorderd list*/
-nav > ul > li {
-    list-style-type: none;
-    font-size: 20px;
-    padding: 9px 18px;
-    margin: 3px;
-    border-radius: 12px;
-    background-color: #ffffff;
+/*nav styling*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px 0;
+    background-color: #31343D;
 }
 
-/*nav button styling on hover*/
-li:hover {
-    background-color: #eef5d0;
-    box-shadow: 1px 3px hsla(49, 81%, 54%, 0.699);
-}
-
-/*removes default styling from all <a> links*/
-li > a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-
-}
-
-/*navigation position*/
 nav > ul {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-top: 0;
-    z-index: 9999;
+    flex-direction: row; 
+    padding-right: 60px;   
 }
 
-@media only screen and (max-width: 760px) {
-    nav > ul {
-        flex-direction: column;
-        position: relative;
-        align-items: flex-start;
-        width: 100%;
-    }    
+nav > ul > li {
+    list-style-type: none;
+    font-size: 23px;
+    padding: 9px 18px;
+    margin: 4px;
+    border-bottom: solid 4px #92CCCD;
+
 }
 
-main {
-    margin-top: 100px;
-}
+nav > ul > li > a {
+        display: block;
+        font-size: 23px;
+        text-decoration: none;
+        color: #92cccd;
+   }
 
-h1 {
+/*Styles the image below the main navigation*/
+.hero {
+    display: flex;
+    width: 100%;
+    height: 197px;
+    background-image: url(./images/hero.png);
+    justify-content: end;
+    align-items: center;
     font-size: 32px;
 }
 
-h2 {
-    font-size: 24px;
+h1 {
+    display: block;
+    color: #31343D;
+    font-size: 30px;
+    text-align: end;
+    background-color: #92CCCD;
+    width: 230px;
+    padding: 1px 20px;
 }
 
-/*my profile image styling*/
+h2 {
+    display: block;
+    background-color: #92CCCD;
+    padding: 3px 10px;
+    font-size: 32px;
+    margin-top: 100px;
+    margin-right: 80px;
+}
+
+h3 {
+    display: block;
+    padding: 3px 10px;
+    border-right: solid 4px #445876;
+    font-size: 32px;
+    text-align: right;
+    color: #445876;
+    margin: 0 20px;
+    min-width: 120px;
+    max-width: 120px;
+}
+
+h4 { 
+    font-size: 28px;
+}
+
+/*sets the layout for section labels and content*/
+.section-style {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+/*sets the padding around the profile content group(image/credits)*/
+.profile-group {
+    padding: 0 10px;
+}
+
+/*defines the profile image border*/
 .profile-image {
     border-radius: 12px;
-    width: 200px;
-    height: 150.250px;
-    margin: 3px 3px 6px 3px;
+    width: 230px;
 }
 
-.about {
-    display: block;
-    margin-top: 32px;
-}
-
-/*corrects position of content below the nav*/
-.work {
-    margin-top: 32px;
-}
-
-/*sets the child contents inside the div to flex*/
-div {
+/*defines the layout of content inside about me.*/
+#about-me {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
+    flex-direction: row;
 }
 
+/*defines the placement of the article title and subtitle.*/
+.label {
+    position: absolute;
+    left: 0%;
+    bottom: 6%;
+    display: inline-block;
+    background-color: #92CCCD;
+    padding: 3px 10px;
+    z-index: 1;
+}
+
+/*defines the alyout for items inside of the work titled section*/
 .projects {
-    margin-right: 20px;
-}
-
-.project0 {
-    margin-right: 20px;
-}
-
-/*primary project folder animation styling*/
-.project0:hover {
-    transform: rotate(1.5deg);
-    background-color: hsla(49, 81%, 54%, 0.699);
-    width: 200px;
-    height: 421px;
-    padding-left: 3px;
-    margin-right: 517px;
-    margin-bottom: 5px;
-    border-radius: 12px;
-}
-
-/*all other secondary project folder animation styling*/
-.projects:hover {
-    transform: rotate(1.5deg);
-    background-color: hsla(49, 81%, 54%, 0.699);
-    width: 200px;
-    height: 421px;
-    padding-left: 3px;
-    margin-right: 167px;
-    margin-bottom: 5px;
-    border-radius: 12px;
-}
-
-footer {
     display: flex;
-    justify-content: space-around;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-/*sets the case for phone and email labels in the footer*/
-address > p > span {
-    text-transform: uppercase;
-    text-decoration: none;
+/*Individaul style for the focus (primary) article.*/
+#article_0 {
+    position: relative;
+    display: block;
+    border: solid 4px #92CCCD;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex-grow: 10;
+    flex-basis: auto;
+    width: 90%;
+    min-width: 200px;
+    min-height: 200px;
 }
 
-/*removes text decoration on the links in the footer*/
-address > p > a {
+/*layout for all secondary articles*/
+article {
+    position: relative;
+    border: solid 4px #92CCCD;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 1 0 auto;
+    min-width: 200px;
+    min-height: 200px;
+    width: 40%;
+}
+
+/*defines the background image for individual articles*/
+#article_0 {
+    background-image: url(./images/rectangle-xsmall-dark.png);
+}
+
+#article_1 {
+    background-image: url(./images/rectangle-xsmall-blu.png);
+}
+
+#article_2 {
+    background-image: url(./images/rectangle-xsmall-green.png);
+}
+
+#article_3 {
+    background-image: url(./images/rectangle-xsmall-purple.png);
+}
+
+#article_4 {
+    background-image: url(./images/rectangle-xsmall-grey.png);
+}
+
+article {
+    opacity: .8;
+}
+
+article~:hover {
+    opacity: 1;
+}
+
+#article_0:hover {
+    opacity: 1;
+}
+
+/*defines the entire article as a link*/
+.block {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 2px;
+}
+
+/*defines the layout for contact links*/
+.contact-links {
+   display: flex;
+}
+
+/*Footer style selectors*/
+div > ul {
+    display: flex;
+    flex-direction: row; 
+    gap: 10%;
+    align-items: center;
+}
+
+div > ul > li {
+    margin: 4px;
+    border-bottom: solid 4px #92CCCD;
+    white-space: nowrap;
+}
+
+div > ul > li > a {
     text-decoration: none;
-    color: #333;
+    font-size: 22px;
+    color: #31343D;
+}
+
+/*Change to list items in footer to wrap for screen sizes below 760px
+  Change about me to wrap and reverse the order for screen sizes below 760px*/
+@media only screen and (max-width: 760px) {
+    div > ul {
+        flex-wrap: wrap;
+    }    
+
+    #about-me {
+        flex-wrap: wrap-reverse;    
+    }    
+
+    .profile-group {
+        padding-bottom: 10px;
+    }
+
+    nav > ul {
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+        min-width: 60px;
+        max-width: 60px;
+    }
 }
