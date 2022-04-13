@@ -1,4 +1,4 @@
-/*Universal Selector*/
+/* Universal Selector*/
 * {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,9 +8,16 @@
     text-decoration: none;
 }
 
-/*Individual style selectors*/
+/* color variables*/
+:root {
+    --blue: #80B8F8;
+    --black: #31343D; 
+    --white: #fff;
+}
 
-/*nav styling*/
+/* individual style selectors*/
+
+/* nav styling*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +25,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     padding: 6px 0;
-    background-color: #31343D;
+    background-color: var(--black);
 }
 
 nav > ul {
@@ -32,7 +39,7 @@ nav > ul > li {
     font-size: 23px;
     padding: 9px 18px;
     margin: 4px;
-    border-bottom: solid 4px #92CCCD;
+    border-bottom: solid 4px var(--blue);
 
 }
 
@@ -40,10 +47,10 @@ nav > ul > li > a {
         display: block;
         font-size: 23px;
         text-decoration: none;
-        color: #92cccd;
+        color: var(--blue);
    }
 
-/*Styles the image below the main navigation*/
+/* styles the image below the main navigation*/
 .hero {
     display: flex;
     width: 100%;
@@ -56,17 +63,17 @@ nav > ul > li > a {
 
 h1 {
     display: block;
-    color: #31343D;
+    color: var(--black);
     font-size: 30px;
     text-align: end;
-    background-color: #92CCCD;
+    background-color: var(--blue);
     width: 230px;
     padding: 1px 20px;
 }
 
 h2 {
     display: block;
-    background-color: #92CCCD;
+    background-color: var(--blue);
     padding: 3px 10px;
     font-size: 32px;
     margin-top: 100px;
@@ -76,10 +83,10 @@ h2 {
 h3 {
     display: block;
     padding: 3px 10px;
-    border-right: solid 4px #445876;
+    border-right: solid 4px var(--blue);
     font-size: 32px;
     text-align: right;
-    color: #445876;
+    color: var(--black);
     margin: 0 20px;
     min-width: 120px;
     max-width: 120px;
@@ -89,67 +96,74 @@ h4 {
     font-size: 28px;
 }
 
-/*sets the layout for section labels and content*/
+/* sets style of links */
+a {
+    color: var(--black);
+}
+
+p>a:hover {
+    text-decoration: underline;
+}
+
+/* sets the layout for section labels and content*/
 .section-style {
     display: flex;
     flex-direction: row;
     padding: 20px;
 }
 
-/*sets the padding around the profile content group(image/credits)*/
+/* sets the padding around the profile content group(image/credits)*/
 .profile-group {
     padding: 0 10px;
     padding-left: 10px;
     padding-right: 20px;
 }
 
-/*defines the profile image border*/
+/* defines the profile image border*/
 .profile-image {
     border-radius: 12px;
     width: 230px;
 }
 
-/*defines the layout of content inside about me.*/
+/* defines the layout of content inside about me.*/
 #about-me {
     display: flex;
     flex-direction: row;
 }
 
-/*defines the placement of the article title and subtitle.*/
+/* defines the placement of the article title and subtitle.*/
 .label {
     position: absolute;
     left: 0%;
     bottom: 6%;
     display: inline-block;
-    background-color: #92CCCD;
+    background-color: var(--blue);
     padding: 3px 10px;
     z-index: 1;
 }
 
-/*defines the alyout for items inside of the work titled section*/
+/* defines the alyout for items inside of the work titled section*/
 .projects {
     display: flex;
     flex-wrap: wrap;
 }
 
-/*Individaul style for the focus (primary) article.*/
+/* individaul style for the focus (primary) article.*/
 #article_0 {
     position: relative;
     display: block;
-    border: solid 4px #92CCCD;
     margin-right: 20px;
     margin-bottom: 20px;
-    flex-grow: 10;
     flex-basis: auto;
     width: 90%;
     min-width: 200px;
-    min-height: 200px;
+    min-height: 300px;
 }
 
-/*layout for all secondary articles*/
+/* layout for all secondary articles*/
 article {
     position: relative;
-    border: solid 4px #92CCCD;
+    border-left: solid 4px var(--blue);
     margin-right: 20px;
     margin-bottom: 20px;
     flex: 1 0 auto;
@@ -158,25 +172,30 @@ article {
     width: 40%;
 }
 
-/*defines the background image for individual articles*/
+/* defines the background image for individual articles*/
 #article_0 {
-    background-image: url(./images/rectangle-xsmall-dark.png);
+    background-image: url(./images/translation_app_01.png);
+    background-size: cover;
 }
 
 #article_1 {
-    background-image: url(./images/rectangle-xsmall-blu.png);
+    background-image: url(./images/weather_01.png);
+    background-size: cover;
 }
 
 #article_2 {
-    background-image: url(./images/rectangle-xsmall-green.png);
+    background-image: url(./images/quiz_01.png);
+    background-size: cover;
 }
 
 #article_3 {
-    background-image: url(./images/rectangle-xsmall-purple.png);
+    background-image: url(./images/scheduler_01.png);
+    background-size: cover;
 }
 
 #article_4 {
-    background-image: url(./images/rectangle-xsmall-grey.png);
+    background-image: url(./images/hawsfield_02.png);
+    background-size: cover;
 }
 
 article {
@@ -191,7 +210,22 @@ article~:hover {
     opacity: 1;
 }
 
-/*defines the entire article as a link*/
+.image-label {
+    display: none;
+    color: var(--black);
+    background-color: var(--white);
+    padding: 3px 12px 3px 12px;
+    font-size: 16px;
+    position: absolute;
+}
+
+article:hover .image-label {
+    display: block;
+    transition-duration: 1s;
+    /* opacity: 0.90; */
+}
+
+/* defines the entire article as a link*/
 .block {
     display: block;
     position: absolute;
@@ -202,12 +236,12 @@ article~:hover {
     padding: 2px;
 }
 
-/*defines the layout for contact links*/
+/* defines the layout for contact links*/
 .contact-links {
    display: flex;
 }
 
-/*Footer style selectors*/
+/* footer style selectors*/
 div > ul {
     display: flex;
     flex-direction: row; 
@@ -217,18 +251,18 @@ div > ul {
 
 div > ul > li {
     margin: 4px;
-    border-bottom: solid 4px #92CCCD;
+    border-bottom: solid 4px var(--blue);
     white-space: nowrap;
 }
 
 div > ul > li > a {
     text-decoration: none;
     font-size: 22px;
-    color: #31343D;
+    color: var(--black);
 }
 
-/*Change to list items in footer to wrap for screen sizes below 760px
-  Change about me to wrap and reverse the order for screen sizes below 760px*/
+/* change to list items in footer to wrap for screen sizes below 760px
+   change about me to wrap and reverse the order for screen sizes below 760px*/
 @media only screen and (max-width: 760px) {
     div > ul {
         flex-wrap: wrap;
