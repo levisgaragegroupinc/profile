@@ -10,9 +10,20 @@
 
 /* color variables*/
 :root {
+    --lightblue: #A6B6C9;
+    --oceanblue: #2D7CDB;
     --blue: #80B8F8;
+    --deepblue: #205CAD;
+    --darkblue: #3E5065;
+    --purple: #5D1C3D;
+    --lightpurple: #faeff5;
     --black: #31343D; 
     --white: #fff;
+}
+
+body {
+    /* background-color: #27323F; */
+    background-color: var(--lightblue);
 }
 
 /* individual style selectors*/
@@ -39,7 +50,7 @@ nav > ul > li {
     font-size: 23px;
     padding: 9px 18px;
     margin: 4px;
-    border-bottom: solid 4px var(--blue);
+    border-bottom: solid 4px var(--deepblue);
 
 }
 
@@ -47,7 +58,7 @@ nav > ul > li > a {
         display: block;
         font-size: 23px;
         text-decoration: none;
-        color: var(--blue);
+        color: var(--oceanblue);
    }
 
 /* styles the image below the main navigation*/
@@ -61,19 +72,31 @@ nav > ul > li > a {
     font-size: 32px;
 }
 
+p {
+    color: var(--deepblue);
+}
+
+.profile-group>* {
+    color: var(--purple);
+}
+
+.profile-group a {
+    color: var(--purple);
+}
+
 h1 {
     display: block;
-    color: var(--black);
+    color: var(--oceanblue);
     font-size: 30px;
     text-align: end;
-    background-color: var(--blue);
+    /* background-color: var(--deepblue); */
     width: 230px;
     padding: 1px 20px;
 }
 
 h2 {
     display: block;
-    background-color: var(--blue);
+    background-color: var(--oceanblue);
     padding: 3px 10px;
     font-size: 32px;
     margin-top: 100px;
@@ -83,10 +106,10 @@ h2 {
 h3 {
     display: block;
     padding: 3px 10px;
-    border-right: solid 4px var(--blue);
+    border-right: solid 4px var(--oceanblue);
     font-size: 32px;
     text-align: right;
-    color: var(--black);
+    color: var(--deepblue);
     margin: 0 20px;
     min-width: 120px;
     max-width: 120px;
@@ -94,11 +117,13 @@ h3 {
 
 h4 { 
     font-size: 28px;
+    color: var(--white);
+    padding-right: 12px;
 }
 
 /* sets style of links */
 a {
-    color: var(--black);
+    color: #faeff5;
 }
 
 p>a:hover {
@@ -137,7 +162,7 @@ p>a:hover {
     left: 0%;
     bottom: 6%;
     display: inline-block;
-    background-color: var(--blue);
+    background-color: var(--oceanblue);
     padding: 3px 10px;
     z-index: 1;
 }
@@ -163,7 +188,7 @@ p>a:hover {
 /* layout for all secondary articles*/
 article {
     position: relative;
-    border-left: solid 4px var(--blue);
+    border-left: solid 4px var(--oceanblue);
     margin-right: 20px;
     margin-bottom: 20px;
     flex: 1 0 auto;
@@ -198,13 +223,13 @@ article {
     background-size: cover;
 }
 
-article {
+/* article {
     opacity: .8;
-}
+} */
 
-article~:hover {
+/* article~:hover {
     opacity: 1;
-}
+} */
 
 #article_0:hover {
     opacity: 1;
@@ -215,8 +240,10 @@ article~:hover {
     color: var(--black);
     background-color: var(--white);
     padding: 3px 12px 3px 12px;
+    border-left: solid 2px var(--purple);
     font-size: 16px;
     position: absolute;
+    box-shadow: 10px 5px 5px var(--purple);
 }
 
 article:hover .image-label {
@@ -251,7 +278,7 @@ div > ul {
 
 div > ul > li {
     margin: 4px;
-    border-bottom: solid 4px var(--blue);
+    border-bottom: solid 4px var(--oceanblue);
     white-space: nowrap;
 }
 
