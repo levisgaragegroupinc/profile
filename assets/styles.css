@@ -22,7 +22,6 @@
 }
 
 body {
-    /* background-color: #27323F; */
     background-color: var(--lightblue);
 }
 
@@ -50,8 +49,11 @@ nav > ul > li {
     font-size: 23px;
     padding: 9px 18px;
     margin: 4px;
-    border-bottom: solid 4px var(--deepblue);
+    border-bottom: solid 4px var(--black);
+}
 
+nav > ul > li:hover {
+    border-bottom: solid 4px var(--deepblue);
 }
 
 nav > ul > li > a {
@@ -82,6 +84,10 @@ p {
 
 .profile-group a {
     color: var(--purple);
+}
+
+.profile-group>p {
+    text-align: center;
 }
 
 h1 {
@@ -222,14 +228,6 @@ article {
     background-image: url(./images/hawsfield_02.png);
     background-size: cover;
 }
-
-/* article {
-    opacity: .8;
-} */
-
-/* article~:hover {
-    opacity: 1;
-} */
 
 #article_0:hover {
     opacity: 1;
