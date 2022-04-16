@@ -4,12 +4,6 @@
 
 This project is my portfolio page where I will link all of my current work and future projects. 
 
-Some or all of the current links may go to content that is not mine. These links are temporary and will be replaced with my own original content when it exists.
-
-Temporary links include:
-
-- https://en.wikipedia.org/wiki/Main_Page 
-    [Wikipedia](https://en.wikipedia.org/wiki/Main_Page).
 
 ## About
 
@@ -29,4 +23,4 @@ The layout of the page is designed to work on both desktop and mobile screens. W
 Navigate to [profile](https://levisgaragegroupinc.github.io/profile/) to view the live page.
 
 ## Credits
-The design colors and layout are from UW Full stack course.
+The layout design is from UW Full stack course.
