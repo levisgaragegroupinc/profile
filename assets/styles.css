@@ -10,6 +10,7 @@
 
 /* color variables*/
 :root {
+    --lighterblue: #D9E0E8;
     --lightblue: #A6B6C9;
     --oceanblue: #2D7CDB;
     --blue: #80B8F8;
@@ -22,7 +23,7 @@
 }
 
 body {
-    background-color: var(--lightblue);
+    background-color: var(--lighterblue);
 }
 
 /* individual style selectors*/
@@ -67,7 +68,7 @@ nav > ul > li > a {
 .hero {
     display: flex;
     width: 100%;
-    height: 197px;
+    height: 170px;
     background-image: url(./images/hero.png);
     justify-content: end;
     align-items: center;
@@ -75,7 +76,7 @@ nav > ul > li > a {
 }
 
 p {
-    color: var(--deepblue);
+    color: var(--darkblue);
 }
 
 .profile-group>* {
@@ -102,20 +103,22 @@ h1 {
 
 h2 {
     display: block;
-    background-color: var(--oceanblue);
+    background-color: var(--lighterblue);
+    color: var(--darkblue);
     padding: 3px 10px;
     font-size: 32px;
     margin-top: 100px;
     margin-right: 80px;
+    border-radius: 6px;
 }
 
 h3 {
     display: block;
     padding: 3px 10px;
-    border-right: solid 4px var(--oceanblue);
+    border-right: solid 4px var(--darkblue);
     font-size: 32px;
     text-align: right;
-    color: var(--deepblue);
+    color: var(--darkblue);
     margin: 0 20px;
     min-width: 120px;
     max-width: 120px;
@@ -168,7 +171,7 @@ p>a:hover {
     left: 0%;
     bottom: 6%;
     display: inline-block;
-    background-color: var(--oceanblue);
+    background-color: var(--darkblue);
     padding: 3px 10px;
     z-index: 1;
 }
@@ -194,7 +197,7 @@ p>a:hover {
 /* layout for all secondary articles*/
 article {
     position: relative;
-    border-left: solid 4px var(--oceanblue);
+    border-left: solid 4px var(--darkblue);
     margin-right: 20px;
     margin-bottom: 20px;
     flex: 1 0 auto;
@@ -276,7 +279,7 @@ div > ul {
 
 div > ul > li {
     margin: 4px;
-    border-bottom: solid 4px var(--oceanblue);
+    border-bottom: solid 4px var(--darkblue);
     white-space: nowrap;
 }
 
