@@ -1,3 +1,6 @@
+let projectListArray;
+const projectRemoveListArray = [0, 1, 3, 5, 6, 7, 9, 10, 14, 19, 23];
+
 const projectSection = document.querySelector("#project-section");
 
 const getReposGitHub = () => {
@@ -11,8 +14,9 @@ const getReposGitHub = () => {
       return response.json();
     })
     .then(function (data) {
+      projectListArray = data;
       let datetime = data[0].updated_at;
-      console.log(data);
+      console.log(projectListArray);
       console.log(data[0].html_url);
       console.log(data[0].updated_at);
       console.log(data[0].name);
@@ -46,3 +50,12 @@ const getReposTeamMembersGitHub = () => {
 };
 
 getReposTeamMembersGitHub();
+
+function arrayRemove(arr, value) {
+  return arr.filter(function (ele) {
+    return ele != value;
+  });
+}
+
+var result = arrayRemove(array, 6);
+// result = [1, 2, 3, 4, 5, 7, 8, 9, 0]
