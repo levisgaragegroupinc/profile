@@ -28,17 +28,21 @@ const getReposGitHub = () => {
 
 getReposGitHub();
 
-// const getReposTeamMembersGitHub = () => {
-//   let requestUrl =
-//     "https://api.github.com/repos/levisgaragegroupinc/byu_grounds/teams";
+const getReposTeamMembersGitHub = () => {
+  let requestUrl =
+    "https://api.github.com/repos/levisgaragegroupinc/knickknacks/contributors";
 
-//   fetch(requestUrl)
-//     .then(function (response) {
-//       return response.json();
-//     })
-//     .then(function (data) {
-//       console.log(data);
-//     });
-// };
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      console.log(data[0].login);
+      console.log(data[1].login);
+      console.log(data[1].html_url);
+      console.log(data[1].avatar_url);
+    });
+};
 
-// getReposTeamMembersGitHub();
+getReposTeamMembersGitHub();
