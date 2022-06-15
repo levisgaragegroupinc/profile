@@ -59,3 +59,9 @@ getReposTeamMembersGitHub();
 
 // var result = arrayRemove(array, 6);
 // result = [1, 2, 3, 4, 5, 7, 8, 9, 0]
+
+show_card_links_handler = (event) => {
+  event.preventDefault();
+  if (event.target.id === "card-link-btn") {
+  }
+};
