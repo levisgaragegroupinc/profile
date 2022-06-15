@@ -27,3 +27,18 @@ const getReposGitHub = () => {
 };
 
 getReposGitHub();
+
+// const getReposTeamMembersGitHub = () => {
+//   let requestUrl =
+//     "https://api.github.com/repos/levisgaragegroupinc/byu_grounds/teams";
+
+//   fetch(requestUrl)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     });
+// };
+
+// getReposTeamMembersGitHub();
