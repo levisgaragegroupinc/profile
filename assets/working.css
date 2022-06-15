@@ -1,0 +1,33 @@
+/* Universal Selector*/
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* color variables*/
+:root {
+    --black: #31343D; 
+    --white: #fff;
+}
+
+body {
+    background-color: var(--lighterblue);
+    margin: 10px;
+}
+
+/* .uk-card {
+    width: 400px;
+} */
+
+/* .uk-card-body {
+    min-width: 600px;
+}
+
+.projects-container {
+    margin: 40px;
+    padding: 40px;
+} */
