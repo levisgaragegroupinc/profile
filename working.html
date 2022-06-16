@@ -22,9 +22,11 @@
                     <a href="#">Projects</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#">Project 1</a></li>
-                            <li><a href="#">Project 2</a></li>
-                            <li><a href="#">Project 3</a></li>
+                            <li><a href="#techblog">Technology Blog</a></li>
+                            <li><a href="#knickknacks">KnickKnacks</a></li>
+                            <li><a href="#weather">Weather</a></li>
+                            <li><a href="#quiz">Quiz</a></li>
+                            <li><a href="#">Translation</a></li>
                         </ul>
                     </div>
                 </li>
@@ -39,107 +41,231 @@
         <h2 class="uk-h2" id="projects">Projects</h2>
         <hr class="uk-divider-icon">
         <div class="uk-section-muted uk-padding-large uk-child-width-1-5@m uk-column-1-4" id="project-section" uk-grid>
-            <div class="uk-width-medium">
+            <div id="techblog" class="uk-width-xlarge">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top">
-                            <img src="./public/images/profile_image.jpg" width="400" height="300" alt="">
+                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                            <a href="./public/images/tech-01.png">
+                            <img src="./public/images/tech-01.png" alt=""></a>
                         </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+                        <div class="uk-card-body uk-padding-small">
+                            <h3 class="uk-card-title">Technology Blog</h3>
+                            <p>Blog site that allows users to register, make posts, and comment.</p>
                         </div>
-                    <nav class="uk-navbar-container" uk-navbar>
-                        <div class="uk-navbar-left">
-                            <ul class="uk-navbar-nav">
-                                <li>
-                                    <a href="#">View</a>
-                                    <div class="uk-navbar-dropdown">
-                                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li><a href="#">Repo</a></li>
-                                            <li><a href="#">App</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="uk-width-medium">
-                <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top">
-                            <img src="./public/images/profile_image.jpg" width="400" height="300" alt="">
-                        </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                        </div>
-                        <div class="uk-width-1-2@s uk-width-2-5@m">
+                        
+                        <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">View</a>
+                                    <a href="#">Links</a>
                                     <ul class="uk-nav-sub">
-                                        <li><a href="#">Repo</a></li>
+                                        <li><a href="https://github.com/levisgaragegroupinc/mvc_tech-blog">Repo</a></li>
                                         <li>
-                                            <a href="#">App</a>
+                                            <a href="https://mvc-technology-blog.herokuapp.com/">App</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
                         </div>
+
+                        <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
+                            <p>App stack</p>
+                            <div uk-grid>
+                                <div class="uk-width-auto">
+                                    <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                        <li>Handlebars</li>
+                                        <li>Express</li>
+                                        <li>Sequelize</li>
+                                        <li>Connect-session-sequelize</li>
+                                        <li>MySQL2</li>
+                                        <li>Bcrypt</li> 
+                                        <li>Heroku</li>
+                                        <li>JAWS DB</li>     
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="uk-width-medium">
+            <div id="knickknacks" class="uk-width-xlarge">
                 <div class="uk-card uk-card-default">
-                    <a onclick="show_card_links_handler(event)" id="card-link-btn">
-                        <div class="uk-card-media-top">
-                            <img src="./public/images/profile_image.jpg" width="400" height="300" alt="">
+                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                            <a href="./public/images/knack_01.png">
+                            <img src="./public/images/knack_01.png" alt=""></a>
                         </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+                        <div class="uk-card-body uk-padding-small">
+                            <h3 class="uk-card-title">Knicknacks</h3>
+                            <p>A community jobs board for everyone.</p>
                         </div>
-                    </a>
-                    <div class="uk-flex uk-flex-around uk-padding-small hidden">
-                        <a class="uk-button uk-button-text" href="#">Visit Repo</a>
-                        <a class="uk-button uk-button-text" href="#">View App</a>
-                    </div>
+                        
+                        <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
+                            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                <li class="uk-parent">
+                                    <a href="#">Links</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="https://github.com/levisgaragegroupinc/KnickKnacks">Repo</a></li>
+                                        <li>
+                                            <a href="https://knickknacks-ondemand.herokuapp.com/">App</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
+                            <p>App stack</p>
+                            <div uk-grid>
+                                <div class="uk-width-auto">
+                                    <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                        <li>Handlebars</li>
+                                        <li>Express</li>
+                                        <li>Sequelize</li>
+                                        <li>Connect-session-sequelize</li>
+                                        <li>MySQL2</li>
+                                        <li>Bcrypt</li> 
+                                        <li>Heroku</li>
+                                        <li>JAWS DB</li>
+                                        <li>Trustifi</li>       
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="uk-width-medium">
+            <div id="weather" class="uk-width-xlarge">
                 <div class="uk-card uk-card-default">
-                    <a onclick="show_card_links_handler(event)" id="card-link-btn">
-                        <div class="uk-card-media-top">
-                            <img src="./public/images/profile_image.jpg" width="400" height="300" alt="">
+                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                            <a href="./public/images/weather_01.png">
+                            <img src="./public/images/weather_01.png" alt=""></a>
                         </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+                        <div class="uk-card-body uk-padding-small">
+                            <h3 class="uk-card-title">Open Weather App</h3>
+                            <p>A 5-day forecast weather app. Save your favorite locations.</p>
                         </div>
-                    </a>
-                    <div class="uk-flex uk-flex-around uk-padding-small hidden">
-                        <a class="uk-button uk-button-text" href="#">Visit Repo</a>
-                        <a class="uk-button uk-button-text" href="#">View App</a>
-                    </div>
+                        
+                        <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
+                            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                <li class="uk-parent">
+                                    <a href="#">Links</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="https://github.com/levisgaragegroupinc/open-weather-app">Repo</a></li>
+                                        <li>
+                                            <a href="https://levisgaragegroupinc.github.io/open-weather-app/">App</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
+                            <p>App stack</p>
+                            <div uk-grid>
+                                <div class="uk-width-auto">
+                                    <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li>
+                                        <li>Moment.js</li>
+                                        <li>OpenWeather API</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="uk-width-medium">
+            <div id="quiz" class="uk-width-xlarge">
                 <div class="uk-card uk-card-default">
-                    <a onclick="show_card_links_handler(event)" id="card-link-btn">
-                        <div class="uk-card-media-top">
-                            <img src="./public/images/profile_image.jpg" width="400" height="300" alt="">
+                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                            <a href="./public/images/quiz_01.png">
+                            <img src="./public/images/quiz_01.png" alt=""></a>
                         </div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Media Top</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+                        <div class="uk-card-body uk-padding-small">
+                            <h3 class="uk-card-title">Quiz App</h3>
+                            <p>An app that tests users knowledge of the Javascript programming language.</p>
                         </div>
-                    </a>
-                    <div class="uk-flex uk-flex-around uk-padding-small hidden">
-                        <a class="uk-button uk-button-text" href="#">Visit Repo</a>
-                        <a class="uk-button uk-button-text" href="#">View App</a>
-                    </div>
+                        
+                        <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
+                            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                <li class="uk-parent">
+                                    <a href="#">Links</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="https://github.com/levisgaragegroupinc/Programming-Quiz">Repo</a></li>
+                                        <li>
+                                            <a href="https://levisgaragegroupinc.github.io/Programming-Quiz/">App</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
+                            <p>App stack</p>
+                            <div uk-grid>
+                                <div class="uk-width-auto">
+                                    <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Javascript</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            </div>      
+            </div>
+            <div id="translation" class="uk-width-xlarge">
+                <div class="uk-card uk-card-default">
+                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                            <a href="./public/images/translation_app_01.png">
+                            <img src="./public/images/translation_app_01.png" alt="application with globe background and inputs for text and language seletion"></a>
+                        </div>
+
+                        <div class="uk-card-body uk-padding-small">
+                            <h3 class="uk-card-title">Translation App</h3>
+                            <p>Translate sentences from english into 17 other languages. And view the definition of english words.</p>
+                        </div>
+                        
+                        <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
+                            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                                <li class="uk-parent">
+                                    <a href="#">Links</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="https://github.com/levisgaragegroupinc/translation_app">Repo</a></li>
+                                        <li>
+                                            <a href="https://levisgaragegroupinc.github.io/translation_app/">App</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
+                            <p>App stack</p>
+                            <div uk-grid>
+                                <div class="uk-width-auto">
+                                    <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Foundation framework</li>
+                                        <li>Javascript</li>
+                                        <li>JQuery</li>
+                                        <li>Google Translate API</li>
+                                        <li>Merriam-Webster's Dictionary API</li>
+                                        <li>Merriam-Webster's Thesaurus API</li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
       
          
         </div>

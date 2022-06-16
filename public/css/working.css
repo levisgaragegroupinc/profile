@@ -27,8 +27,3 @@ body {
     background-color: var(--lighterblue);
     margin: 10px;
 }
-
-/* Hide the card buttons by default until the card is clicked */
-.hidden {
-    display: none;
-}
