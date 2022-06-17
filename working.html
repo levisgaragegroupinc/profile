@@ -33,12 +33,30 @@
                 </li>
                 <li><a href="./assets/files/resume-tlb-2022.pdf" target="_blank">resume</a></li>
                 <li><a href="#about">about</a></li>
+                <li><a uk-toggle="target: #offcanvas-usage">contact</a></li>
             </ul>
         </div>
     </nav>
-    <main>          
+    <div id="offcanvas-usage" uk-offcanvas>
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Contact Card</h3>
+            <ul>
+                <li><a href="tel:+15096109096">509-610-9096</a></li>
+                <li><a href="mailto:tbateswsu@gmail.com">tbateswsu@gmail.com</a></li>
+                <li><a href="https://www.linkedin.com/in/travis-bates-a27bb494/">LinkdIn</a></li>
+                <li><a href="https://github.com/levisgaragegroupinc">Github</a></li>
+            </ul>
+            <p>Travis Bates</p>
+        </div>
+    </div>
+
+
+
+
+    <main>
+        <hr class="uk-divider-icon">          
         <h2 class="uk-h2" id="projects">Projects</h2>
-        <hr class="uk-divider-icon">
         <div class="uk-section-muted uk-padding-large uk-child-width-1-5@m uk-column-1-4" id="project-section" uk-grid>
             <div id="techblog" class="uk-width-xlarge">
                 <div class="uk-card uk-card-default">
@@ -310,10 +328,38 @@
                 </div>
             </div>
         </div>
-        <h2 class="uk-h2" id="About">About</h2>
-        <hr class="uk-divider-icon">
-
-    </main>
+        
+        <div>
+            <hr class="uk-divider-icon">
+            <h2 class="uk-h2" id="about">About</h2>
+            <div class="uk-section uk-section-default">
+                <div class="uk-container">
+            
+                    <h3>Travis L Bates</h3>
+            
+                    <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                        <div>
+                            <p>I have worked for METER Group Inc, USA for 10+ years. I started with METER in 2007 as a part-time marketing intern while at Washington State University (WSU). After earning my degree I returned to farming with my family.</p>
+                        </div>
+                        <div>
+                            <p>Since returing to work for METER I have had many roles including: Manufacturing Assembler, Market Research Intern, Technical Sales Specialist, Product Owner, and Client Success Manager.</p>
+                        </div>
+                        <div>
+                            <p>What enjoy most about my work is the opportunities to learn new skills and apply them. The programming team at METER is who inspired me to pursue web development at the University of Washington (UW).</p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+                <div class="uk-flex uk-flex-center">
+                    <img class="uk-border-circle" src="./public/images/profile_01.png" alt="">
+                    <div class="uk-overlay uk-light uk-position-bottom">
+                        <p>Photo by: Nick Frank.</p>
+                    </div>
+                </div>
+        </div>
+    
+        </main>
     <hr class="uk-divider-icon">
     <footer>
         <h2 class="uk-h2" id="projects">Contact</h2>
