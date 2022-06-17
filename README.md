@@ -2,25 +2,20 @@
 
 # Description
 
-This project is my portfolio page where I will link all of my current work and future projects. 
-
+This web site is my portfolio page. You will find examples of my projects and links the deployed applications and Github repository URLs.
 
 ## About
 
-This website uses flexbox to create section labels on the left side of the page, with content on the write. Each individual section has flex properties applied to allow for dynamic content flow as the viewport width changes, or if additional items are added to the indiidual sections.
+This website uses UKkit to create the layout and interactions. The web page is responsive to multiple screen sizes. Use the projects drop-down to quickly jump to a project. Each project shows the technologies used when hovering over the Stack. Expand the Links section on a project to show the Repository and Application links.
 
-The layout of the page is designed to work on both desktop and mobile screens. When the screen resolution is smaller than 768px content in the About Me is is re-ordered to preserve a cleaner look, and the section titles are reduced.
+### Desktop
 
-### Desktop Mock Up
-
-![Desktop screenshot](./assets/images/profile-screenshot-full.png)
-
-### Mobile Mock Up
-
-<img src="./assets/images/profile-screenshot-mobile.png" width="250px">
+![Desktop screenshot](./public/images/full-screen_01.png)
 
 ## View the Project
+
 Navigate to [profile](https://levisgaragegroupinc.github.io/profile/) to view the live page.
 
 ## Credits
-The layout design is from UW Full stack course.
+
+UIKit
