@@ -15,9 +15,12 @@
     --blue-00: #1b5079;
     --blue-01: #236192;
     --blue-01-op: #236292f5;
+    --blue-01-op2: #2362921f;
     --blue-02: #2b71a7;
     --blue-03: #2e7cb8;
     --blue-op-01: #2362923a;
+    --green-00: #077226;
+    --green-01: #099531;
 }
 
 /* elements */
@@ -48,15 +51,53 @@ a:hover {
     background-color: var(--blue-00) !important;
 }
 
+.restyle-background-muted {
+    background-color: var(--blue-01-op2) !important;
+}
 
-.restyle-links {
+.re-h2 {
+color: var(--blue-00);
+font-weight: 600;
+}
+
+.restyle-nav-links {
     color: var(--white-01) !important;
 }
 
-.restyle-links:hover {
+.restyle-nav-links:hover {
     color: var(--white-03) !important;
 }
 
 .restyle-links-active {
     color: var(--white-03) !important;
+}
+
+.restyle-links {
+    color: var(--blue-03) !important;
+}
+
+.restyle-links:hover {
+    color: var(--blue-00) !important;
+}
+
+.restyle-links-01 {
+    color: var(--green-00) !important;
+}
+
+.restyle-links-01:hover {
+    color: var(--green-01) !important;
+}
+
+.restyle-divider:before {
+    border: 2px solid var(--blue-02) !important;
+    border-radius: 20px !important;
+}
+
+.restyle-divider::after {
+    border: 2px solid var(--blue-02) !important;
+    border-radius: 20px !important;
+}
+
+.padding-left {
+    padding-left: 20px;
 }
