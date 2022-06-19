@@ -5,40 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./public/css/styles.css">
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
-    <script defer src="./public/js/script.js"></script>
-
-    <link rel="stylesheet" href="./public/css/styles.css">
     <title>Travis Levi Bates: Profile</title>
 </head>
 <body>
-    <nav class="uk-navbar-container" uk-navbar uk-sticky>
+    <nav class="uk-navbar-container restyle-background-01" uk-navbar uk-sticky>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Home</a></li>
+                <li class="uk-active"><a class="restyle-links-active" uk-icon="home" href="#"></a></li>
                 <li>
-                    <a href="#">Projects</a>
-                    <div class="uk-navbar-dropdown">
+                    <a class="restyle-nav-links" href="#">Projects</a>
+                    <div class="uk-navbar-dropdown restyle-background-01">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#techblog">Technology Blog</a></li>
-                            <li><a href="#knickknacks">KnickKnacks</a></li>
-                            <li><a href="#weather">Weather</a></li>
-                            <li><a href="#quiz">Quiz</a></li>
-                            <li><a href="#translation">Translation</a></li>
-                            <li><a href="#notes">Notes</a></li>
+                            <li><a class="restyle-nav-links" href="#techblog">Technology Blog</a></li>
+                            <li><a class="restyle-nav-links" href="#knickknacks">KnickKnacks</a></li>
+                            <li><a class="restyle-nav-links" href="#weather">Weather</a></li>
+                            <li><a class="restyle-nav-links" href="#quiz">Quiz</a></li>
+                            <li><a class="restyle-nav-links" href="#translation">Translation</a></li>
+                            <li><a class="restyle-nav-links" href="#notes">Notes</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="./public/files/resume-tlb-2022.pdf" target="_blank">resume</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a uk-toggle="target: #offcanvas-usage">contact</a></li>
+                <li><a class="restyle-nav-links" href="./public/files/resume-tlb-2022v2.pdf" target="_blank">resume</a></li>
+                <li><a class="restyle-nav-links" href="#about">about</a></li>
+                <li><a class="restyle-nav-links" uk-toggle="target: #offcanvas-usage">contact</a></li>
             </ul>
         </div>
     </nav>
     <div id="offcanvas-usage" uk-offcanvas>
-        <div class="uk-offcanvas-bar">
+        <div class="uk-offcanvas-bar restyle-background-02">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <h3>Contact Card</h3>
             <ul>
@@ -51,25 +48,24 @@
         </div>
     </div>
     <main>
-        <hr class="uk-divider-icon uk-padding">          
-        <h2 class="uk-h2 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top " id="projects">Projects</h2>
-        <div class="uk-section-muted uk-padding-large uk-child-width-1-2@m uk-child-width-1-3@xl" id="project-section" uk-grid>
-            <div id="techblog" class="">
+        <hr class="uk-divider-icon uk-padding restyle-divider">          
+        <h2 class="uk-h2 re-h2 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top">Projects</h2>
+        <div class="restyle-background-muted uk-padding-large uk-child-width-1-2@m uk-child-width-1-3@xl" id="project-section" uk-grid>
+            <div id="techblog">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/tech_01.png">
-                            <img src="./public/images/tech_01.png" alt=""></a>
-                        </div>
-
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Technology Blog</h3>
-                            <p>Blog site that allows users to register, make posts, and comment.</p>
-                        </div>
-                        
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/tech_01.png">
+                        <img src="./public/images/tech_01.png" alt="blog website application."></a>
+                    </div>
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Technology Blog</h3>
+                        <p>Blog site that allows users to register, make posts, and comment.</p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/mvc_tech-blog" target="_blank">Repo</a></li>
                                         <li>
@@ -79,9 +75,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -100,24 +95,24 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div id="knickknacks" class="">
+            <div id="knickknacks">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/knack_01.png">
-                            <img src="./public/images/knack_01.png" alt=""></a>
-                        </div>
-
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Knicknacks</h3>
-                            <p>A community jobs board for everyone.</p>
-                        </div>
-                        
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/knack_01.png">
+                        <img src="./public/images/knack_01.png" alt="jobs board software application interface."></a>
+                    </div>
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Knicknacks</h3>
+                        <p>A community jobs board for everyone.</p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/KnickKnacks" target="_blank">Repo</a></li>
                                         <li>
@@ -127,9 +122,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -149,24 +143,24 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div id="weather" class="">
+            <div id="weather">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/wx_01.png">
-                            <img src="./public/images/wx_01.png" alt=""></a>
-                        </div>
-
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Open Weather App</h3>
-                            <p>A 5-day forecast weather app. Save your favorite locations.</p>
-                        </div>
-                        
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/wx_01.png">
+                        <img src="./public/images/wx_01.png" alt="weather forecast software application interface."></a>
+                    </div>
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Open Weather App</h3>
+                        <p>A 5-day forecast weather app. Save your favorite locations.</p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/open-weather-app" target="_blank">Repo</a></li>
                                         <li>
@@ -176,9 +170,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -191,24 +184,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div id="quiz" class="">
+            <div id="quiz">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/quiz_01.png">
-                            <img src="./public/images/quiz_01.png" alt=""></a>
-                        </div>
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/quiz_01.png">
+                        <img src="./public/images/quiz_01.png" alt="quiz software application interface."></a>
+                    </div>
 
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Quiz App</h3>
-                            <p>An app that tests users knowledge of the Javascript programming language.</p>
-                        </div>
-                        
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Quiz App</h3>
+                        <p>An app that tests users knowledge of the Javascript programming language.</p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/Programming-Quiz" target="_blank">Repo</a></li>
                                         <li>
@@ -218,9 +212,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -231,24 +224,24 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div id="translation" class="">
+            <div id="translation">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/translation_01.png">
-                            <img src="./public/images/translation_01.png" alt="application with globe background and inputs for text and language seletion"></a>
-                        </div>
-
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Translation App</h3>
-                            <p>Translate sentences from english into 17 other languages.</p>
-                        </div>
-                        
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/translation_01.png">
+                        <img src="./public/images/translation_01.png" alt="language translation software application interface"></a>
+                    </div>
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Translation App</h3>
+                        <p>Translate sentences from english into 17 other languages.</p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/translation_app" target="_blank">Repo</a></li>
                                         <li>
@@ -258,9 +251,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -276,24 +268,25 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
-            <div id="notes" class="">
+            <div id="notes">
                 <div class="uk-card uk-card-default">
-                        <div class="uk-card-media-top uk-cover-container" uk-lightbox>
-                            <a href="./public/images/notes_01.png">
-                            <img src="./public/images/notes_01.png" alt="application with globe background and inputs for text and language seletion"></a>
-                        </div>
+                    <div class="uk-card-media-top uk-cover-container" uk-lightbox>
+                        <a href="./public/images/notes_01.png">
+                        <img src="./public/images/notes_01.png" alt="note software application interface."></a>
+                    </div>
 
-                        <div class="uk-card-body uk-padding-small">
-                            <h3 class="uk-card-title">Notes</h3>
-                            <p>Add and delete notes. Notes include title. </p>
-                        </div>
-                        
+                    <div class="uk-card-body uk-padding-small">
+                        <h3 class="uk-card-title">Notes</h3>
+                        <p>Add and delete notes. Notes include title. </p>
+                    </div>
+                    <div class="flex-items">
                         <div class="uk-width-auto uk-padding-small uk-padding-remove-top">
                             <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
                                 <li class="uk-parent">
-                                    <a href="#">Links</a>
+                                    <a href="#" class="restyle-links">Links</a>
                                     <ul class="uk-nav-sub">
                                         <li><a href="https://github.com/levisgaragegroupinc/note-keeper" target="_blank">Repo</a></li>
                                         <li>
@@ -303,9 +296,8 @@
                                 </li>
                             </ul>
                         </div>
-
                         <div class="uk-visible-toggle uk-padding-small uk-padding-remove-top uk-padding-remove-bottom" tabindex="-1">
-                            <p>Stack</p>
+                            <p class="restyle-links-01">Stack<span uk-icon="code"></span></p>
                             <div uk-grid>
                                 <div class="uk-width-auto">
                                     <ul class="uk-hidden-hover uk-iconnav uk-padding-small uk-padding-remove-top uk-padding-remove-left uk-padding-remove-right">
@@ -321,12 +313,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <hr class="uk-divider-icon uk-padding">
-        <h2 class="uk-h2 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top" id="about">About</h2>
+        <hr class="uk-divider-icon uk-padding restyle-divider">
+        <h2 class="uk-h2 re-h2 uk-padding-large uk-padding-remove-bottom uk-padding-remove-top" id="about">About</h2>
         <div class="uk-section uk-section-default">
             <div class="uk-container">
                 <h3>Travis L Bates</h3>
@@ -346,17 +338,14 @@
         <div class="uk-flex uk-flex-center">
             <div>
                 <div class="uk-inline">
-                    <img class="uk-border-circle" src="./public/images/profile_01.png" alt="">
+                    <img class="uk-border-circle" src="./public/images/profile_01.png" alt="Travis Bates profile headshot.">
                     <div class="dark uk-overlay uk-light uk-position-bottom-center uk-border-pill uk-padding-remove-bottom uk-padding-remove-top">
                         <p class="white">Photo by:<a class="" href="https://www.behance.net/nickfrank"> Nick Frank</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    
-        </main>
-    <hr class="uk-divider-icon uk-padding">
-    <footer>
-    </footer> 
+    </main>
+    <hr class="uk-divider-icon uk-padding restyle-divider">
 </body>
 </html>
