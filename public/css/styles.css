@@ -82,6 +82,7 @@ font-weight: 600;
 
 .restyle-links-01 {
     color: var(--green-00) !important;
+    padding-top: 3px;
 }
 
 .restyle-links-01:hover {
@@ -100,4 +101,9 @@ font-weight: 600;
 
 .padding-left {
     padding-left: 20px;
+}
+
+.flex-items {
+    display: flex;
+    align-items: flex-start;
 }
