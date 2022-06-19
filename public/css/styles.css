@@ -11,7 +11,12 @@
     --black-op-01: #31343d83; 
     --white-01: #fff;
     --white-02: rgb(228, 228, 228);
-    --blue: #236192;
+    --white-03: rgb(202, 201, 201);
+    --blue-00: #1b5079;
+    --blue-01: #236192;
+    --blue-01-op: #236292f5;
+    --blue-02: #2b71a7;
+    --blue-03: #2e7cb8;
     --blue-op-01: #2362923a;
 }
 
@@ -35,14 +40,23 @@ a:hover {
     color: var(--white);
 } 
 
-#restyle-nav {
-    background-color: var(--blue);
+.restyle-background-01 {
+    background-color: var(--blue-01-op) !important;
 }
+
+.restyle-background-02 {
+    background-color: var(--blue-00) !important;
+}
+
 
 .restyle-links {
     color: var(--white-01) !important;
 }
 
 .restyle-links:hover {
-    color: var(--white-02) !important;
+    color: var(--white-03) !important;
+}
+
+.restyle-links-active {
+    color: var(--white-03) !important;
 }
