@@ -18,6 +18,7 @@
     --blue-01-op2: #2362921f;
     --blue-02: #2b71a7;
     --blue-03: #2e7cb8;
+    --blue-03-op: #2e7cb869;
     --blue-op-01: #2362923a;
     --green-00: #077226;
     --green-01: #099531;
@@ -90,12 +91,12 @@ font-weight: 600;
 }
 
 .restyle-divider:before {
-    border: 2px solid var(--blue-02) !important;
+    border: 2px solid var(--blue-03-op) !important;
     border-radius: 20px !important;
 }
 
 .restyle-divider::after {
-    border: 2px solid var(--blue-02) !important;
+    border: 2px solid var(--blue-03-op) !important;
     border-radius: 20px !important;
 }
 
