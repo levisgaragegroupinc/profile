@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./public/css/styles.css">
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
     <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
-
-    <link rel="stylesheet" href="./public/css/styles.css">
     <title>Travis Levi Bates: Profile</title>
 </head>
 <body>
-    <nav class="uk-navbar-container" uk-navbar uk-sticky>
+    <nav class="uk-navbar-container" id="restyle-nav" uk-navbar uk-sticky>
         <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#">Home</a></li>
+                <li class="uk-active"><a class="restyle-links" href="#">Home</a></li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a class="restyle-links" href="#">Projects</a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li><a href="#techblog">Technology Blog</a></li>
@@ -30,9 +29,9 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="./public/files/resume-tlb-2022v2.pdf" target="_blank">resume</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a uk-toggle="target: #offcanvas-usage">contact</a></li>
+                <li><a class="restyle-links" href="./public/files/resume-tlb-2022v2.pdf" target="_blank">resume</a></li>
+                <li><a class="restyle-links" href="#about">about</a></li>
+                <li><a class="restyle-links" uk-toggle="target: #offcanvas-usage">contact</a></li>
             </ul>
         </div>
     </nav>
